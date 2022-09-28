@@ -63,7 +63,8 @@
  - ### Command di dalam Git & Github
      - git init <nama_proyek>, untuk membuat repositori baru
 
-    ![git_innit](https://raw.githubusercontent.com/Jirjatss/week-1/main/gambar/git_init.JPG)
+       ![git init](https://user-images.githubusercontent.com/80299731/192761413-359cbdaf-a7eb-42b5-85b1-4e8eb6fd934b.png)
+
 
      - <div align="justify">git commit, untuk melakukan commit atau menyimpan perubahan pada version control pada git. Dan kita bisa menambahkan pesan untuk membeikan checkout pada setiap perbuahan. contohnya "git commit -m "pesan checkout"
 
