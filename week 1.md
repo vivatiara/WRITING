@@ -221,10 +221,11 @@
      Kita menambahkann CSS langsung pada atribut HTML
 
      ```html
-     <p style="color:red">Tulisan ini berwarna merah</p>
+     <p style="color:blue">Tulisan ini berwarna biru</p>
      ```
 
-     ![](gambar/inline.jpg)
+     ![image_2022-09-28_173813685](https://user-images.githubusercontent.com/80299731/192758549-30a4758a-a726-468c-892d-971b148a726c.png)
+
 
   &nbsp;
 
@@ -233,19 +234,19 @@
      Kode CSS internal diletakkan di dalam bagian <head> pada halaman. CSS internal diletakkan di dalam tag "<style></style>".
     
      ```html
-     <!DOCTYPE html>
+<!DOCTYPE html>
      <html>
        <head>
          <title>Website Pertamaku</title>
          <style>
            body {
-             background-color: yellow;
+             background-color: pink;
            }
            h1 {
-             color: blue;
+             color: black;
            }
            p {
-             color: red;
+             color: green;
            }
          </style>
        </head>
@@ -258,7 +259,8 @@
 
      Tampilan dari sintaks diatas adalah
 
-     ![](gambar/internal-css.jpg)
+    ![image_2022-09-28_174122940](https://user-images.githubusercontent.com/80299731/192759119-ae9fc673-1dca-4286-af8a-2d0ca25157c7.png)
+
 
      &nbsp;
 
@@ -289,19 +291,20 @@
      /* File styles.css */
 
      body {
-       background-color: pink;
+       background-color: rgb(241, 22, 59);
      }
      h1 {
-       color: blue;
+       color: black;
      }
      p {
-       color: black;
+       color: rgb(39, 231, 39);
      }
      ```
 
      Tampilan dari sintaks diatas adalah
 
-     ![](gambar/ekstenal-css.jpg)
+     ![2](https://user-images.githubusercontent.com/80299731/192760849-59f9e9eb-ea90-4664-98e3-a83ccb52a874.JPG)
+
 
      &nbsp;
 
