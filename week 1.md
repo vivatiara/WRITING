@@ -41,7 +41,7 @@
 | ----------- | :---------: 
 | 1. Meng-install software di penyimpanan lokal | 1. Host melalui layanan cloud |
 | 2. Dikelola oleh The Linux Foundation | 2. Diakuisisi oleh Microsoft pada 2018 |
-| 4. Akses secara offline | 4. Akses secara online | 
+| 3. Akses secara offline | 3. Akses secara online | 
 |5. Berfokus pada version control dan code sharing|5. Berfokus pada source code hosting terpusat|
   &nbsp;    
       
@@ -131,7 +131,8 @@
 
     Hasilnya di browser
 
-    ![](gambar/tebal-miring.JPG)
+    ![image_2022-09-28_171431408](https://user-images.githubusercontent.com/80299731/192753803-d421289f-c9d1-4a8f-8666-aa5392caefd0.png)
+
 
   - Tag HTML Untuk Membuat tulisan dengan link
 
@@ -141,7 +142,8 @@
 
     Hasilnya di web browser
 
-    ![](gambar/link.jpg)
+  ![image_2022-09-28_171642347](https://user-images.githubusercontent.com/80299731/192754221-fb8034bc-2e69-47e5-b1f6-ed5165e2721f.png)
+
 
   - Tag Untuk Membuat Daftar/List
 
