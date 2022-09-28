@@ -206,6 +206,25 @@
     - Deploy Website
  &nbsp;
     
+- Elemen semantik adalah elemen-elemen yang menyatakan makna atau tujuan dari elemen itu sendiri. Salah satu keuntungan menggunakan elemen semantik adalah dokumen HTML kita akan mudah dibaca, baik itu oleh manusia maupun mesin.
+    
+     - Berikut ini daftar elemen-elemen semantik:
+
+        - article — untuk membuat elemen artikel;
+        - aside — untuk membuat elemen bagian samping;
+        - details — untuk membuat elemen datail atau spoiler;
+        - figcaption — untuk membuat teks caption pada figure;
+        - figure — untuk membuat figur atau gambar pada artikel;
+        - footer — untuk membuat elemen bagian kaki dari web;
+        - header — untuk mebuat kepala kop dari web;
+        - main — untuk membuat elemen utama;
+        - mark — untuk menandai teks;
+        - nav — untuk membuat navigasi;
+        - section — untuk membuat bagian artikel;
+        - summary — untuk membuat ringkasan artikel atau isi spoiler;
+        - time — untuk membuat elemen yang menyatakan waktu;
+ &nbsp;
+    
 ## CSS
 
 - Definisi CSS
@@ -336,5 +355,33 @@
     Adalah value yaitu nilai/hiasan berupa warna biru
 
   &nbsp;
+      
+- Flexbox adalah cara untuk mengatur layout. Flexbox direkomendasikan karena penggunaannya yang mudah dan didukung oleh kebanyakan browser.
+  - flex-direction properti  digunakan untuk mengatur letak item child.  ada 4 value flex-direction yang harus kamu ketahui:
+    - row (default): secara default letak item child membentuk sebuah baris dari kiri ke kanan.
+    - row-reverse: letak item child membentuk sebuah baris dari kanan ke kiri
+    - column: letak item child membentuk sebuah baris dari atas ke bawah
+    - column-reverse: letak item child membentuk sebuah baris dari bawah ke atas
+ - flex-wrap
+flex secara default akan membuat tata letak item children dalam 1 line saja. flex akan menyesuaikan space yang ada.
+namun jika kamu ingin membatasi jumlah item children dalam 1 line lalu item children yang lain akan pindah ke posisi line yang baru, maka kita bisa menggunakan flex-wrap. properti flex-wrap memiliki 3 value:
+    - no-wrap (default): secara default , flex tidak menggunakan flex-wrap
+    - wrap: flex item akan memiliki beberapa line dari atas ke bawah  jika space dalam 1 line sudah full width.
+    - wrap-reverse: kebalikan dari wrap yaitu lex item akan memiliki beberapa line dari bawah ke atas  jika space dalam 1 line sudah full width
+      
+ - flex-flow
+   properti flex-flow digunakan sebagai shortcut untuk set up flex-direction dan flex-wrap bersamaan. ada 4 value pada flex-flow:
+    - row nowrap
+    - column wrap
+    - column reverse
+    - row-reverse wrap-reverse
+      
+  - order
+      properti order pada flex adalah berfungsi untuk ordering item mana yang ingin kita atur posisinya berdasarkan urutan order.
+ada 3 value dari properti order:
+    - -1 : Item child yang di set order -1, maka item child tersebut akan berada di ordering paling awal atau paling kiri.
+    - 0 (default) : Flex secara default memiliki order 0 pada setiap item child. Ini berarti 0 akan membuat item child sesuai urutan pada html.
+    - 1: Item child yang di set order 1, maka item child tersebut akan berada di ordering paling akhir atau paling kanan.
+
 
 
