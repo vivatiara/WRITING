@@ -198,5 +198,134 @@
     - Pilih Repository yang akan di Deploy
     - Melakukan Konfigurasi
     - Deploy Website
+ &nbsp;
+    
+## CSS
+
+- Definisi CSS
+
+  <div align="justify">CSS (Cascading Style Sheets) adalah bahasa komputer yang digunakan untuk menambahkan design ke suatu halaman website di internet agar terlihat lebih cantik/menarik. Kita ibaratkan HTML adalah kerangka yang memberi sturuktur pada website, maka CSS adalah baju yang memberi warna dan layout pada website.
+
+&nbsp;
+
+- Cara Menggunakan CSS
+
+  1. Inline Styles
+    nline CSS digunakan untuk tag HTML tertentu. Atribut <style> digunakan untuk memberikan style ke tag HTML tertentu.
+
+     Kita menambahkann CSS langsung pada atribut HTML
+
+     ```html
+     <p style="color:red">Tulisan ini berwarna merah</p>
+     ```
+
+     ![](gambar/inline.jpg)
+
+  &nbsp;
+
+  2. Internal CSS
+
+     Kode CSS internal diletakkan di dalam bagian <head> pada halaman. CSS internal diletakkan di dalam tag "<style></style>".
+    
+     ```html
+     <!DOCTYPE html>
+     <html>
+       <head>
+         <title>Website Pertamaku</title>
+         <style>
+           body {
+             background-color: yellow;
+           }
+           h1 {
+             color: blue;
+           }
+           p {
+             color: red;
+           }
+         </style>
+       </head>
+       <body>
+         <h1>Website Pertamaku</h1>
+         <p>Selamat Datang</p>
+       </body>
+     </html>
+     ```
+
+     Tampilan dari sintaks diatas adalah
+
+     ![](gambar/internal-css.jpg)
+
+     &nbsp;
+
+  3. Eksternal CSS
+
+     <div align="justify"> CSS eksternal biasanya diletakkan setelah bagian <head> pada halaman
+     Contoh:
+
+     <div align="justify">Kita memiliki dua file: index.html untuk file HTML-nya dan styles.css untuk file CSS-nya.
+
+     ```html
+     <!-- File index.html -->
+
+     <!DOCTYPE html>
+     <html>
+       <head>
+         <title>Website Pertamaku</title>
+         <link rel="stylesheet" href="styles.css" />
+       </head>
+       <body>
+         <h1>Website Pertamaku</h1>
+         <p>Selamat Datang</p>
+       </body>
+     </html>
+     ```
+
+     ```css
+     /* File styles.css */
+
+     body {
+       background-color: pink;
+     }
+     h1 {
+       color: blue;
+     }
+     p {
+       color: black;
+     }
+     ```
+
+     Tampilan dari sintaks diatas adalah
+
+     ![](gambar/ekstenal-css.jpg)
+
+     &nbsp;
+
+- CSS Syntax
+
+  <div align="justify">CSS Syntax adalah syntax yang digunakan untuk menunjuk atau memilih HTML element mana yang ingin diberi style (dihias). CSS syntax terdiri dari selector, property, dan value.
+
+  Syntaxnya seperti ini:
+
+  ```css
+  p {
+    color: blue;
+  }
+  ```
+
+  Penjelasan :
+
+  - p
+
+    Adalah sebuah selector berupa element HTML yang akan diubah
+
+  - color
+
+    <div align="justify">Adalah sebuah properti berupa bagian mana dari element HTML yang akan diubah. Contoh diatas kita akan mengubah warna dari teks yang ada di element p
+
+  - blue
+
+    Adalah value yaitu nilai/hiasan berupa warna biru
+
+  &nbsp;
 
 
