@@ -190,4 +190,13 @@
 - Deploy HTML
 
   <div align="justify">Deploy adalah sebuah proses untuk menyebarkan aplikasi yang sudah kita kerjakan supaya bisa digunakan oleh orang-orang. Jika aplikasi kita HTML atau Web App kita perlu mendeploy ke server. Untuk melakukan hal tersebut kita bisa menggunakan layanan yang bernama Netlify
-            
+ 
+- Bagaimana mendeploy HTML
+    - Kita gunakan tools bernama Netlify
+    - Kita tinggal masuk ke netlify.com lalu register seperti biasa menggunakan email atau github
+    - Setelah itu masuk ke tab Sites lalu drag and drop seluruh folder html kalian
+    - Pilih Repository yang akan di Deploy
+    - Melakukan Konfigurasi
+    - Deploy Website
+
+
