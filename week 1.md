@@ -137,7 +137,7 @@
   - Tag HTML Untuk Membuat tulisan dengan link
 
     ```html
-    <a href="">Welcome To AMMAN Coding Bootcamp BATCH 3</a>
+    <a href="">Welcome To viva tiara Coding Bootcamp BATCH 3</a>
     ```
 
     Hasilnya di web browser
@@ -151,41 +151,44 @@
 
       ```html
       <ol>
-        Dafunda
-        <li>Dafunda Tekno</li>
-        <li>Dafunda Otaku</li>
-        <li>Dafunda Games</li>
+        viv
+        <li>viv Tekno</li>
+        <li>viv Otaku</li>
+        <li>viv Games</li>
       </ol>
       ```
 
       Hasilnya di web browser
 
-      ![](gambar/ol.jpg)
+     ![ol](https://user-images.githubusercontent.com/80299731/192755079-6fe122b0-51c4-45d6-90a7-4abdfe764a68.JPG)
+
 
     - Unordered List
 
       ```html
       <ul>
-        Dafunda
-        <li>Dafunda Tekno</li>
-        <li>Dafunda Otaku</li>
-        <li>Dafunda Games</li>
+        viv
+        <li>viv Tekno</li>
+        <li>viv Otaku</li>
+        <li>viv Games</li>
       </ul>
       ```
 
       Hasilnya di web browser
 
-      ![](gambar/ul.jpg)
+     ![image_2022-09-28_172220655](https://user-images.githubusercontent.com/80299731/192755381-9ba61e54-0a59-4ea5-84d4-717f5c5d6d0c.png)
+
 
   - Tag HTML Untuk Menampilkan gambar
 
     ```html
-    <img src="https://bit.ly/2FKluzq" alt="Si Kucing"></img>
+    <img src="[https://bit.ly/2FKluzq](https://img2.pngdownload.id/20171201/9c4/rabbit-png-image-5a21e60a049693.5834797315121710180188.jpg)" alt="Si Kelinci"></img>
     ```
 
     Hasilnya di web browser
 
-    ![](gambar/gambar.jpg)
+   ![kelinci](https://user-images.githubusercontent.com/80299731/192757532-f3b88e99-88ab-4b94-bab3-cd2fd3f48a6c.JPG)
+
 
     &nbsp;
 
