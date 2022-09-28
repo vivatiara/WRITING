@@ -409,6 +409,11 @@ ada 3 value dari properti order:
       
   &nbsp;
 
+   - contoh gambar flowchart algoritma sederhaha dalam kehidupan sehari hari. 
+     
+      ![kopi](https://user-images.githubusercontent.com/80299731/192772627-d9352672-f104-470f-a7ca-8897c36706c8.png)
+
+     
   - Kualitas Algortima
 
     Kualitas wajib dari algoritma
