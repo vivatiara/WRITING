@@ -194,6 +194,9 @@ Perbedaannya terletak pada jangkauan dan penggunaannya. Nanti kita akan bahas le
  - ### Apa itu DOM
    <div align="justify">DOM merupakan singkatan dari Document Object Model. Artinya, dokumen (HTML) yang dimodelkan dalam sebuah objek. Objek dari dokumen ini menyediakan sekumpulan fungsi dan atribut/data yang bisa kita manfaatkan dalam membuat program Javascript. Inilah yang disebut API (Application Programming Interface). DOM tidak hanya untuk dokumen HTML saja. DOM juga bisa digunakan untuk dokumen XML dan SVG. DOM juga tidak hanya ada di Javascript saja, DOM juga ada pada bahasa pemrograman lain.
     
+- ### Fungsi DOM
+     <div align="justify">fungsinya sendiri adalah memungkinkan untuk memanipulasi tampilan web menggunakan JavaScript. Pada saat proses dari render file HTML sedang berlangsung, browser membuat model objek dokumen atau DOM.
+    
 - ### Bagaimana Cara Menggunakan DOM?
   <div align="justify">Objek DOM di javascript bernama **Document** Objek ini berisi segala hal yang kita butuhkan untuk memanipulasi HTML. Jika kita coba ketik document pada console Javascript, maka yang akan tampil adalah kode HTML.
    
@@ -283,11 +286,46 @@ Perbedaannya terletak pada jangkauan dan penggunaannya. Nanti kita akan bahas le
    - EventListener - Form Submission
      <div align="justify"> Misalkan kita mempunyai element beberapa input dalam sebuah form <input name=”email /> dan <input type=”password” name=”password”/>. Bagaimana caranya  kita mendapatkan isi dari kedua input tersebut saat submit form?
 
+- Cara Mengambil Elemen HTML
+     - Dengan Nama Class
+        <div align="justify"> getElementsByClassName() merupakan sebuah method yang dapat menghasilkan lebih dari satu objek. 
+      
+        ```
+        let items = document.getElementsByClassName(‘list-items’);
+        ```
+     - Dengan Nama ID
+       <div align="justify">Anda juga dapat mendapatkan lebih dari satu objek ketika menggunakan metho berupa getElementById(). 
+      
+        ```
+        let title = document.getElementById(‘header-title’);
 
+        ```
+      
+     - Dengan Nama Tag
+        <div align="justify">Mendapatkan nama tak juga bisa menggunakan method getElementBtTagName(). Untuk contohnya seperti di bawah ini:
 
+         ```
+         let listItems = document.getElementsByTagName(‘li’);
+         ```
+      
+     - Dengan QuerySelector
+       <div align="justify">Get by id : let header = document.querySelector(‘#header’)
+       <div align="justify">By class : let items = document.querySelector(‘.list-items’)
+       <div align="justify">By tag : let headings = document.querySelector(‘h2’);
+      
+     - Memperoleh Elemen Secara Lebih Spesifik
+        <div align="justify">Apakah Anda ingin mendapatkan elemen yang sifatnya lebih spesifik? Tidak perlu khawatir karena Anda bisa memanfaatkan CSS Selector. Caranya yaitu dengan:
+      
+        ```
+        document.querySelector(“h2.heading”);
+        ```
+      
+     - QueryselectorAll
+        <div align="justify">  Jika Anda sudah mengetahui seputar method querySelector(), sekarang kami akan menjelaskan method querySelectorAll(). Namun keduanya mempunyai perbedaan. Perbedaan tersebut adalah pada saat Anda mengembalikan seluruh elemen yang sama dengan memanfaatkan CSS Selector.
 
-
-
+        ```
+        let heading = document.querySelectorAll(‘h2.heading’);
+        ```
    
             
              
