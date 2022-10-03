@@ -34,5 +34,23 @@
             <div align="justify">3. Booleans
             <div align="justify">4. undefined
             <div align="justify">5. null
-        
+             
+        - **Non-Primitive** (referred to collectively as Objects)
+            <div align="justify">1. Objects
+            <div align="justify">2. Arrays
+            <div align="justify">3. Functions
+             
+            - contoh bagaimana Primitif disimpan:
+             
+  ```html
+  let a = 5
+let b = a
+console.log(a) // 5
+console.log(b) // 5
+console.log(a === b) // true
+a = 10
+console.log(a) // 10
+console.log(b) // 5
+console.log(a === b) // false ```
+
  
