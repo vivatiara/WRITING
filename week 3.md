@@ -157,16 +157,171 @@
        })
        console.log(buahSegar)
    
-   
- - ### Method-method penting pada Array 
+    
   
 ## JS Intermediate-Multidimensional Array
 
 ## JS Intermediate-Object
+- ### Apa itu Object
+   
+  <div align="justify">object adalah sebuah tipe data pada variabel yang menyimpan properti dan fungsi (method)
+   
+  **<div align="justify">Properti** adalah data lengkap dari sebuah object.
+   
+  **<div align="justify">Method** adalah action dari sebuah object. Apa saja yang dapat dilakukan dari suatu object.
+  
+ **<div align="justify">Do’s**
+  
+  <div align="justify">1. Object dapat mengupdate value dari key yang sudah tersedia
+  <div align="justify">2. Object dapat menambahkan key dan value baru
+
+
+ <div align="justify">Tipe data yang sudah kita pelajari:
+  
+<div align="justify">1. number
+<div align="justify">2. string
+<div align="justify">3. boolean
+<div align="justify">4. null
+<div align="justify">5. undefined
+<div align="justify">6. array
+<div align="justify">7. object
+
+ <div align="justify">Sama seperti tipe data sebelumnya. Object dapat diassign kedalam sebuah variabel.
+  
+  <div align="justify">Object person
+
+  
+              let person = {};
+
+
+
+**Mengakses Object dan Property Object**
+
+        let person = {
+        name : 'john Doe;,
+        age : 25,
+        isverified : true,
+        }
+
+        console.llog(person):
+   
+**memanggil nama objek dengan variable**
+   
+         let properti = "umur";
+         console.log(siswa[properti]);
+
+         siswa.nama = siswa.umur;
+         console.log(siswa);
+   
+ **cara akses objek terbagi menjadi 2**
+<div align="justify">1. dot notation
+<div align="justify">2. bracket
+ 
+         //dot notation
+         let siswa = {
+         nama: "terra",
+         umur: 17,
+         hobi: "memancing",
+         "nomor handphone": 182367599,
+ 
+         console.log(siswa.nama);
+         // console.log(siswa.nomor handphone);
+ 
+ 
+         // bracket
+          console.log(siswa["nama"]);
+          console.log(siswa["nomor handphone"]);
+ 
+ 
+         // memanggil nama objek dengan variable
+         let properti = "umur";
+         console.log(siswa[properti]);
+
+         siswa.nama = siswa.umur;
+         console.log(siswa);
+         Footer
+ 
+ 
+**menambahkan properti baru ke dalam objek**
+ 
+ 
+          let buku = {
+            judul: "mantan jadi manten",
+            penulis: "hayati",
+            "jumlah halaman": 250,
+          };
+
+          console.log(buku);
+
+          buku.tahun = 2022;
+          buku.terjual = 3000;
+          console.log(buku);
+
+          buku["penerbit"] = "gramedia";
+          console.log(buku);
+ 
+ **Create object**
+           // note: key pada object biasanya disebut juga dengan properti
+
+           let nama_obj = {
+             key1: "value",
+             key2: "value2",
+           };
+
+           let siswa = {
+             nama: "terra",
+             umur: 17,
+             hobi: "memancing",
+             "nomor handphone": 082367599,
+           };
+
+           console.log(siswa);
+ 
+ 
 
 ## Js Intermediate-Recursive
+ 
+- ### apa itu Recursive
+ <div align="justify">Recursive adalah function yang memanggil dirinya sendiri sampai kondisi tertentu. Recursive kebanyakan digunakan untuk case matematika, fisika, kimia, dan yang berhubungan dengan calculation.
+  
+- ### Ciri dari rekursif:
+ <div align="justify">1. Fungsi rekursif selalu memiliki kondisi yang menyatakan kapan fungsi tersebut berhenti. Kondisi ini harus dapat dibuktikan akan                            tercapai, karena jika tidak tercapai maka kita tidak dapat membuktikan bahwa fungsi akan berhenti, yang berarti algoritma kita tidak                           benar.
+<div align="justify">2. Fungsi rekursif selalu memanggil dirinya sendiri sambil mengurangi atau memecahkan data masukan setiap panggilannya. Hal ini penting                      diingat, karena tujuan utama dari rekursif ialah memecahkan masalah dengan mengurangi masalah tersebut menjadi masalah-masalah kecil.
+
+
+ - ### Struktur recursive
+ 
+              function rwcursive() {
+              recursive() ;
+              }
+ 
+ - ## contoh 
+ 
+ **<div align="justify">Rekursi dengan Angka**
+ 
+               function sum(l){
+                  if (empty(l)) {
+                      return 0;
+                  } else {
+                      return car(l) + sum(cdr(l));
+                  }
+              }
+ 
+ 
+<div align="justify">Fungsi empty mengembalikan nilai true jika list tidak memiliki elemen. fungsi car mengembalikan elemen pertama dalam list. Sebagai contoh, car([1,2,3,4]) mengembalikan nilai 1. Fungsi cdr mengembalikan list tanpa elemen pertama. Sebagai contoh, cdr([1,2,3,4]) mengembalikan nilai [2,3,4]. Apa yang terjadi ketika kita menjalankan sum([1,2,3,4])?
 
 ## JavaScript Intermediate - Asynchronous - Introduction
+ 
+ - ### Asynchronous
+ <div align="justify">Pemrograman Asynchronous adalah teknik yang memungkinkan program Anda untuk memulai tugas yang berpotensi berjalan lama dan masih dapat responsif terhadap peristiwa lain saat tugas itu berjalan, daripada harus menunggu sampai tugas itu selesai. Setelah tugas itu selesai, program Anda disajikan dengan hasilnya.
+  
+- ### Synchronous programming
+  
+  
+            const name = 'Miriam';
+          const greeting = `Hello, my name is ${name}!`;
+          console.log(greeting);
+          // "Hello, my name is Miriam!"
 
 ## JavaScript Intermediate - Asynchronous - Promise
 
