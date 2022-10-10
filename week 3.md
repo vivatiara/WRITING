@@ -322,14 +322,40 @@
           const greeting = `Hello, my name is ${name}!`;
           console.log(greeting);
           // "Hello, my name is Miriam!"
+  
+  
 
 ## JavaScript Intermediate - Asynchronous - Promise
   
-<div align="justify">"Memproduksi kode" adalah kode yang bisa memakan waktu lama
+    <div align="justify">"Memproduksi kode" adalah kode yang bisa memakan waktu lama
 
-<div align="justify">"Mengkonsumsi kode" adalah kode yang harus menunggu hasilnya
+    <div align="justify">"Mengkonsumsi kode" adalah kode yang harus menunggu hasilnya
 
-<div align="justify">Janji adalah objek JavaScript yang menautkan kode yang menghasilkan dan mengonsumsi kode
+    <div align="justify">Janji adalah objek JavaScript yang menautkan kode yang menghasilkan dan mengonsumsi kode
+
+     <div align="justify">Pending
+     <div align="justify">Fulfilled
+     <div align="justify">Rejected
+      
+     <div align="justify"> Objek Promise mendukung dua properti: status dan hasil.
+
+     <div align="justify">Sementara objek Promise "tertunda" (berfungsi), hasilnya tidak ditentukan.
+
+     <div align="justify">Ketika objek Janji "terpenuhi", hasilnya adalah nilai.
+
+     <div align="justify">Ketika objek Promise "ditolak", hasilnya adalah objek error.
+     
+      
+  - ### Berikut ini cara menggunakan Promise:
+      
+         myPromise.then(
+         function(value) { /* code if successful */ },
+         function(error) { /* code if some error */ }
+         );
+
+ - ### Promise Object Properties
+ 
+ <div align="justify">Objek Promise JavaScript dapat berupa:
  
  
 - ### Promise Syntax
@@ -367,6 +393,20 @@
                 .catch(err => {
                   console.log(err);
                 })
+  
+  
+  
+            // ========================= CALLBACK =====================
+             console.log("CALLBACK")
+             console.log("A")
+
+             // butuh proses yg memakan waktu
+             // callback -> function yg dijadikan sbg argumen
+             setTimeout(() => {
+               console.log("B")
+             }, 1000)
+
+             console.log("C")
  
  
 ## Js Intermediate-Web Storage
@@ -377,9 +417,9 @@
    
  - ### Property dan method yang digunakan pada localStorage dan sessionStorage yaitu:
 
-<div align="justify">key(n) Mendapatkan nama key atau nama data urutan ke-n pada penyimpanan dimulai dari 0.
-<div align="justify">length Mendapatkan jumlah item data yang disimpan pada storage
-<div align="justify">getItem(nama_key) Mendapatkan data dari storage dengan nama yang disebutkan
-<div align="justify">setItem(nama_key, data_disimpan) Menyimpan data ke storage
-<div align="justify">removeItem(nama_key) Menghapus data pada storage dengan nama yang disebutkan
-<div align="justify">clear() Mengosongkan semua data tersimpan pada storage
+   <div align="justify">key(n) Mendapatkan nama key atau nama data urutan ke-n pada penyimpanan dimulai dari 0.
+   <div align="justify">length Mendapatkan jumlah item data yang disimpan pada storage
+   <div align="justify">getItem(nama_key) Mendapatkan data dari storage dengan nama yang disebutkan
+   <div align="justify">setItem(nama_key, data_disimpan) Menyimpan data ke storage
+   <div align="justify">removeItem(nama_key) Menghapus data pada storage dengan nama yang disebutkan
+   <div align="justify">clear() Mengosongkan semua data tersimpan pada storage
