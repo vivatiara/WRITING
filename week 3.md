@@ -324,6 +324,62 @@
           // "Hello, my name is Miriam!"
 
 ## JavaScript Intermediate - Asynchronous - Promise
+  
+<div align="justify">"Memproduksi kode" adalah kode yang bisa memakan waktu lama
 
+<div align="justify">"Mengkonsumsi kode" adalah kode yang harus menunggu hasilnya
+
+<div align="justify">Janji adalah objek JavaScript yang menautkan kode yang menghasilkan dan mengonsumsi kode
+ 
+ 
+- ### Promise Syntax
+                 let myPromise = new Promise(function(myResolve, myReject) {
+                 // "Producing Code" (May take some time)
+
+                   myResolve(); // when successful
+                   myReject();  // when error
+                 });
+
+                 // "Consuming Code" (Must wait for a fulfilled Promise)
+                 myPromise.then(
+                   function(value) { /* code if successful */ },
+                   function(error) { /* code if some error */ }
+                 );
+
+ 
+ 
+ 
+                 // ================== promise dari function =============
+                console.log("PROMISES dari function")
+                let nonton = (kondisi) => {
+                  return new Promise((resolve, reject) => {
+                    if (kondisi == "jalan") {
+                      resolve("nonton terpenuhi")
+                    }
+                    reject("batal nonton")
+                  })
+                }
+
+                nonton("jalan")
+                .then(result => {
+                  console.log(result)
+                })
+                .catch(err => {
+                  console.log(err);
+                })
+ 
+ 
 ## Js Intermediate-Web Storage
 
+- ### Apa itu Web Storage?
+  <div align="justify">Web storage adalah salah satu Web API yang dapat menyimpan data secara lokal pada sisi client. Berbeda dengan objek atau array, data yang disimpan pada objek atau array JavaScript bersifat sementara, dan akan hilang jika terjadi reload atau pergantian URL pada browser. Sedangkan data yang disimpan pada Web Storage akan bertahan lebih lama karena data akan disimpan pada storage browser.
+   
+   
+ - ### Property dan method yang digunakan pada localStorage dan sessionStorage yaitu:
+
+<div align="justify">key(n) Mendapatkan nama key atau nama data urutan ke-n pada penyimpanan dimulai dari 0.
+<div align="justify">length Mendapatkan jumlah item data yang disimpan pada storage
+<div align="justify">getItem(nama_key) Mendapatkan data dari storage dengan nama yang disebutkan
+<div align="justify">setItem(nama_key, data_disimpan) Menyimpan data ke storage
+<div align="justify">removeItem(nama_key) Menghapus data pada storage dengan nama yang disebutkan
+<div align="justify">clear() Mengosongkan semua data tersimpan pada storage
