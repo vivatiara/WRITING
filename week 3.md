@@ -118,7 +118,48 @@
   
          arrBuah.push("duku")          // di akhir
          arrBuah.unshift("anggur")     // di awal
+  
+  **Cara Menghapus Data Array**
+  
+  <div align="justify">Sama seperti menambahkan data ke array, menghapus data juga memiliki dua cara:
 
+<div align="justify">1, Menggunakan delete;
+<div align="justify">2. Menggunakan method pop().
+
+         delete buah[2];
+ 
+ Kita dapat menghapus data dengan nomer indeks tertentu dengan delete. Sedangkan pop() akan menghapus dari belakang.
+
+ <div align="justify">Kekurangan dari delete, ia akan menciptakan ruang kosong di dalam array.
+  
+  ![image_2022-10-10_132729140](https://user-images.githubusercontent.com/80299731/194808736-9704fd9a-063f-496f-bc88-ac9f0e7bad91.png)
+
+ Menggunakan method pop().
+  
+          arrBuah.pop()        // di akhir
+          arrBuah.shift()      // di awal
+  
+  **Mengubah isi Array**
+  
+           var bahasa = ["Javascript", "Kotlin", "Java", "PHP", "Python"];
+           bahasa[1] = "C++";
+  
+  Maka "Kotlin" akan diganti dengan "C++".
+  
+  **<div align="justify">map**
+  <div align="justify">map() melakukan perulangan/looping dengan membuat array baru.
+ 
+   
+         // map..........................
+       // bisa dengan return
+       let buahSegar = arrBuah.map((item) => {
+         return item + " " + "segar"
+       })
+       console.log(buahSegar)
+   
+   
+ - ### Method-method penting pada Array 
+  
 ## JS Intermediate-Multidimensional Array
 
 ## JS Intermediate-Object
