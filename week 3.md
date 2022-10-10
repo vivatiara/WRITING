@@ -160,6 +160,48 @@
     
   
 ## JS Intermediate-Multidimensional Array
+   
+ 
+
+*Multidimensional array* (array multidimensi) adalah sebuah array yang berisikan array lagi didalamnya. Konsepnya penggunaannya sama dengan array biasa (satu dimensi), hanya saja jumlah indeks yang digunakan saat mengakses nilai didalam array adalah sebanyak dimensi dari array tersebut.
+
+Contoh array multidimensi antara lain diagram kartesius dan matriks. Diagram kartesius dan matriks adalah array multidimensi yang sama-sama membutuhkan koordinat untuk mengakses nilai didalamnya.
+
+```
+(y)
+4 |       *
+3 |     *
+2 |   *
+1 | *
+  + - - - - (x)
+0   1 2 3 4
+
+Diagram kartesius adalah contoh array 2 dimensi. Setiap titik pada diagram di atas memiliki koordinat (x,y) tertentu yaitu (1,1), (2,2), (3,3), dan (4,4).
+```
+
+**berikut contoh array 2 dimensi pada JavaScript dan cara penggunaannya**
+
+```javascript
+// cara deklarasi array 2 dimensi kosong
+var arr2D = [[]];
+
+// contoh array 2 dimensi
+var arr2D = [ [1,2], [3,4], [5,6] ];
+var murid = [ ['Budi', 'SD 1 Cicayur'], ['Suci', 'SD 23 Beji'] ];
+
+// cara mengakses nilai didalam array 2 dimensi
+console.log(arr2D[0]);    // [1,2]
+console.log(arr2D[0][1]); // 2
+console.log(murid[1]);    // ['Suci', 'SD 23 Beji']
+console.log(murid[1][1]); // 'SD 23 Beji''
+
+// array 2 dimensi dengan built-in functions
+arr2D.push([7,8]);        // arr2D = [ [1,2], [3,4], [5,6], [7,8] ]
+arr2D[1].push(0);         // arr2D = [ [1,2], [3,4,0], [5,6], [7,8] ]
+arr2D[0].pop();           // arr2D = [ [1], [3,4,0], [5,6], [7,8] ]
+arr2D[2].pop();           // arr2D = [ [1], [3,4,0], [5], [7,8] ]
+```
+   
 
 ## JS Intermediate-Object
 - ### Apa itu Object
@@ -190,7 +232,7 @@
   
   <div align="justify">Object person
 
-  
+ 
               let person = {};
 
 
@@ -325,25 +367,102 @@
   
   
 
+           // ada 2 cara
+           // - promise (then catch)
+           // - async await
+
+           // ===================== Promise ===================
+           // promise
+           // namaPromis.then().catch()
+           nonton("jalan")
+           .then(result => {
+             console.log(result);
+           }).catch(err => {
+             console.log(err)
+           })
+
+           // ===================== async await ===============
+           // async await -> car utk nangkep obj promise
+           // buat async function
+           async function asyncNonton() {
+             try {
+               let result = await nonton("jalan")
+               console.log(result);
+             } catch (error) {
+               console.log(error)
+             }
+           }
+           asyncNonton()
+
+           // async arrow
+           // let asyncNonton = async () => { }
+  
+  
+ **async arrow**
+  
+            // let asyncNonton = async () => { }
+  
+  
+
 ## JavaScript Intermediate - Asynchronous - Promise
   
-    <div align="justify">"Memproduksi kode" adalah kode yang bisa memakan waktu lama
+  <div align="justify">"Memproduksi kode" adalah kode yang bisa memakan waktu lama
 
-    <div align="justify">"Mengkonsumsi kode" adalah kode yang harus menunggu hasilnya
+  <div align="justify">"Mengkonsumsi kode" adalah kode yang harus menunggu hasilnya
 
-    <div align="justify">Janji adalah objek JavaScript yang menautkan kode yang menghasilkan dan mengonsumsi kode
+  <div align="justify">Janji adalah objek JavaScript yang menautkan kode yang menghasilkan dan mengonsumsi kode
 
-     <div align="justify">Pending
-     <div align="justify">Fulfilled
-     <div align="justify">Rejected
+  <div align="justify">Pending
+  <div align="justify">Fulfilled
+  <div align="justify">Rejected
       
-     <div align="justify"> Objek Promise mendukung dua properti: status dan hasil.
+  <div align="justify"> Objek Promise mendukung dua properti: status dan hasil.
 
-     <div align="justify">Sementara objek Promise "tertunda" (berfungsi), hasilnya tidak ditentukan.
+  <div align="justify">Sementara objek Promise "tertunda" (berfungsi), hasilnya tidak ditentukan.
 
-     <div align="justify">Ketika objek Janji "terpenuhi", hasilnya adalah nilai.
+  <div align="justify">Ketika objek Janji "terpenuhi", hasilnya adalah nilai.
 
-     <div align="justify">Ketika objek Promise "ditolak", hasilnya adalah objek error.
+  <div align="justify">Ketika objek Promise "ditolak", hasilnya adalah objek error.
+   
+   
+            // ============== Menampilkan data digimon pada web ============
+
+            // belum pakai fetch.......................
+            // pakai data dummy
+            let listDigimonNonFetch = document.getElementById("list-digimon-non-fetch")
+            let digimons = ["Agumon", "Gabumon", "Patamon"]
+
+            digimons.forEach(item => {
+              console.log(item)
+              listDigimonNonFetch.innerHTML += `<h3>${item}</h3>`
+
+              // alternative
+              // let textDigimon = document.createElement("h3")
+              // textDigimon.innerText = item
+              // containerDigimon.append(textDigimon)
+            })
+
+            // sesudah pakai fetch......................
+            // async await
+            listDigimon = document.getElementById("list-digimon")
+
+            let getDataDigimon = async () => {
+              let URL = "https://digimon-api.vercel.app/api/digimon"
+              let response = await fetch(URL)
+              let digimons = await response.json()
+
+              // menampilkan 10 data digimon
+              digimons.slice(0, 10).forEach((item, index) => {
+                  listDigimon.innerHTML += 
+                  `<div>
+                    <img src="${item.img}" alt="" width="200">
+                    <h3>${item.name}</h3>
+                  </div>`
+              })
+            }
+
+            getDataDigimon()
+   
      
       
   - ### Berikut ini cara menggunakan Promise:
@@ -414,6 +533,7 @@
 - ### Apa itu Web Storage?
   <div align="justify">Web storage adalah salah satu Web API yang dapat menyimpan data secara lokal pada sisi client. Berbeda dengan objek atau array, data yang disimpan pada objek atau array JavaScript bersifat sementara, dan akan hilang jika terjadi reload atau pergantian URL pada browser. Sedangkan data yang disimpan pada Web Storage akan bertahan lebih lama karena data akan disimpan pada storage browser.
    
+ **<div align="justify"> HTML web storage; better than cookies.**
    
  - ### Property dan method yang digunakan pada localStorage dan sessionStorage yaitu:
 
@@ -423,3 +543,21 @@
    <div align="justify">setItem(nama_key, data_disimpan) Menyimpan data ke storage
    <div align="justify">removeItem(nama_key) Menghapus data pada storage dengan nama yang disebutkan
    <div align="justify">clear() Mengosongkan semua data tersimpan pada storage
+    
+    
+    
+                    // ==================== check ketika pertama kali website di buka, apakah ada key: theme dan value: dark di storage
+                document.querySelector("form").addEventListener("submit", (ev) => {
+                  ev.preventDefault();
+                  const userInput = document.querySelector("input").value;
+
+                  const li = document.createElement("li");
+                  li.innerText = userInput;
+
+                  todos.push(userInput);
+
+                  localStorage.setItem("todo", JSON.stringify(todos));
+
+                  const container = document.querySelector("#list-container");
+                  container.appendChild(li);
+                });
