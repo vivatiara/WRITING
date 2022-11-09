@@ -92,6 +92,63 @@ Sebelum masuk lebih dalam ke Node JS, terdapat beberapa materi yang perlu direvi
 
   
 ## Express Js
+  
+Express.js adalah framework web app untuk Node.js yang ditulis dengan bahasa pemrograman JavaScript. Express.js adalah framework back end. Artinya, ia bertanggung jawab untuk mengatur fungsionalitas website, seperti pengelolaan routing dan session, permintaan HTTP, penanganan error, serta pertukaran data di server. 
+  
+   &nbsp;
+  
+Back end app adalah aplikasi yang berjalan di server-side yang bekerja untuk memberikan informasi berupa data sesuai request dari client / browser / front end app. Umumnya server-side app membuat REST API
+
+  &nbsp;
+  
+RESTful API / REST API merupakan penerapan dari API (Application Programming Interface). 
+
+Sedangkan REST (Representional State Transfer) adalah sebuah arsitektur metode komunikasi yang menggunakan protokol HTTP untuk pertukaran data dimana metode ini sering diterapkan dalam pengembangan aplikasi. Dengan tujuannya untuk menjadikan sistem memiliki performa yang baik, cepat dan mudah untuk di kembangkan (scale) terutama dalam pertukaran dan komunikasi data.
+
+   &nbsp;
+  
+RESTFUL API memiliki 4 komponen penting yaitu:
+
+- URL Design
+- HTTP Verbs
+- HTTP Response Code
+- Format Response
+  
+  &nbsp;
+  
+Installation and Preparation
+- Install express JS.  xpressJS adalah sebuat modules atau package yang dikembangkan menggunakan bahasa javascript, maka kita bisa menggunakan NPM untuk menginstall express JS
+
+              nmp install express --save
+  
+- Preparation, Terdapat beberapa module yang perlu diinstal untuk mempermudah develop server side application, seperti nodemon (agar dapat restart application otomatis selama proses development)
+
+             nmp install --save-dev  nodemon
+
+- Routes, Routes adalah sebuah end point yang diapat kita akses menggunakan URL di website. Didalam routes kita perlu menentukan method API, alamat dan response apa saja yang akan dikeluarkan
+- method, Kita dapat menggunakan method yang dalam REST API seperti POST, PUT, PATCH dan DELETE
+- Response, Di dalam route kita dapat mengirim response menggunakan parameter dari route express.js yaitu “res.Send()” untuk mengirim plain text ketika kita mengakses route tersebut. 
+- Query, Query merupakan parameter yang digunakan untuk membantu menentukan tindakan yang lebih spesifik daripada hanya sekedar router biasa. Biasanya query ditaruh di akhir route dengan memberikan informasi diawali dengan “?” kemudian tedapat key dan data
+- Status Code, Dalam pengaplikasian back end application, kita sangat perlu memberikan status code sebagai informasi apakah route yang kita akses berjalan sebagaimana mestinya dan tidak terjadi error.
+
+  &nbsp;
+  
+Apa Itu Middleware ?
+
+- Middleware function adalah sebuah fungsi yang memiliki akses ke object request (req), object response (res), dan sebuah fungsi next didalam request-response cycle.
+- Fungsi next biasanya di berikan nama variable next.
+
+Bagaimana Cara Middleware Bekerja?
+
+- Untuk memahami cara kerja middleware, bayangkan Anda memiliki stan minuman lemon di mana pelanggan membawa lemon mereka sendiri dan Anda membuat minuman lemon dari buah yang di bawa langsung oleh pelanggan.
+
+- Anda bertanggung jawab untuk mengevaluasi asal dan kesegaran buah lemon, membuang lemon di bawah standar, dan, akhirnya, membuat minuman lemonnya.
+
+- Untuk mengurangi beban kerja Anda, Anda mempekerjakan seorang pekerja — kita akan memanggilnya Larry — yang bertugas untuk memastikan lemon ditanam secara organik dan tanpa bahan kimia berbahaya.
+
+- Dalam analogi ini, Larry adalah middleware yang berfungsi antara Anda dan pelanggan Anda.
+
+  
 ## Design Database with MySQL
 ## Design Database with MySQL
 ## 
