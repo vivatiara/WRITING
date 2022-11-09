@@ -29,10 +29,37 @@ Web server terdiri dari 2 komponen penting:
 - Delete (hapus data)
 - Put / PATCH (update data)
 
-
+  &nbsp;
+  
+**Status code :**
+-	2xx  - success
+-	3xx  - redirect
+-	4xx  - client error
+-	5xx  - server error
 
 
 ## Intro Node.Js
+  
+Node.js adalah runtime, Node Js adalah perangkat lunak yang diciptakan secara khusus untuk membantu pengembangan aplikasi berbasis web. Namun, yang perlu dipahami, Node Js bukanlah sebuah bahasa pemrograman baru, melainkan runtime atau yang juga disebut interpreter JavaScript.
+  
+  &nbsp;
+  
+Node.js menggunakan arsitektur “Single Threaded Event Loop” untuk menangani beberapa klien bersamaan. Model Pemrosesan Node.js didasarkan pada model berbasis peristiwa JavaScript bersama dengan mekanisme panggilan balik JavaScript.
+  
+   &nbsp;
+  
+Thread dalam ilmu komputer adalah eksekusi menjalankan beberapa tugas atau program secara bersamaan. Setiap unit yang mampu mengeksekusi kode disebut thread.
+
+  &nbsp;
+  
+Sebelum masuk lebih dalam ke Node JS, terdapat beberapa materi yang perlu direview dan di pahami lagi dari bahasa pemorgraman javascript agar mempermudah memahami Node JS  yaitu :
+
+- Arrow function expression (Arrow expression merupakan fitur terbaru dari javascript, yaitu mempermudah membuat sintaks function menggunakan “=>”)
+- Asynchronous (Asynchronous merupakan konsep yang paling penting dari javascript. Pada dasarnya, javascript mengeksekusi code secara single thread dan berurutan baris per baris yang disebut dengan synchronous. Sedangkan asynchronous memungkinkan mengeksekusi code tanpa berurutan dengan cara “skip” code dan melanjutkan eksekusi code selanjutnya. Konsep ini menungkinkan code kita tidak terjadi blocking dan lebih efisien.)
+
+- JSON (JSON atau Javascript Object Notation merupakan format yang digunakan untuk menyimpan dan mengirim data menggunakan konsep object di javascript. JSON dapat digunakan di hampir semua bahasa pemrograman sehingga sangat cocok untuk dipelajari)
+
+  
 ## Express Js
 ## Design Database with MySQL
 ## Design Database with MySQL
