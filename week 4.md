@@ -1,4 +1,4 @@
-# **Rangkuman Week1**
+# **Rangkuman Week4**
 ## JavaScript Intermediate - Asynchronous - Fetch
 
                   const verseChoose = document.querySelector('select');
