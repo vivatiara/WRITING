@@ -59,6 +59,37 @@ Sebelum masuk lebih dalam ke Node JS, terdapat beberapa materi yang perlu direvi
 
 - JSON (JSON atau Javascript Object Notation merupakan format yang digunakan untuk menyimpan dan mengirim data menggunakan konsep object di javascript. JSON dapat digunakan di hampir semua bahasa pemrograman sehingga sangat cocok untuk dipelajari)
 
+   &nbsp;
+  
+**Install Node JS**
+- Untuk mengetes apakah berhasil terinstall, dapat menjalankan “node -v” untuk mengecek versi NodeJS yang terinstal.
+               
+                  node -v    
+ 
+- Kita dapat menggunakan node di terminal kita dengan mengetik “node” kemudian bisa membuat code javascript dan langsung dieksekusi
+  
+                  node 
+  
+  &nbsp;
+  
+**Build In Module Node JS**
+- Console (merupakan module bawaan dari javascript yang ada di node JS untuk digunakan sebagai debug atau menampilkan code secara interface)
+- Process adalah modules yang digunakan untuk menampilkan dan mengontrol prosess Node JS yang sedang dijalankan.
+- OS module merupakan module yang digunakan untuk menyediakan informasi terkait sistem operasi komputer yang digunakan user.
+- Module Util merupakan alat bantu / utilities untuk mendukung kebutuhan internal API di Node JS
+- Events
+- Errors merupakan modules yang dapat digunakan untuk mendefinisikan error di Node JS sehingga lebih informatif. Kita juga dapat menghandle error menggunakan try catch
+- Buffer merupakan modules yang digunakan untuk mengakses, mengelola dan mengubah tipe data raw atau tipe data bytes
+- Fs atau “file system” merupakan module yang dapat membantu berinteraksi dengan file yang ada diluar code. FS paling sering digunakan untuk membaca file dengan ekstensi .txt, .csv, dan .json
+- Timers merupakan modules yang digunakan untuk melakukan scheduling atau mengatur waktu pemanggilan fungsi yang dapat diatur di waktu tertentu
+
+   &nbsp;
+  
+**Node JS Web Server**
+- Untuk menggunakan modul HTTP, gunakan require()
+- Gunakan method createServer() untuk membuat server HTTP
+- Callback function yang digunakan pada method http.createServer(), akan dijalankan ketika seseorang mencoba mengakses komputer pada port 8080.
+
   
 ## Express Js
 ## Design Database with MySQL
