@@ -150,5 +150,36 @@ Bagaimana Cara Middleware Bekerja?
 
   
 ## Design Database with MySQL
+  
+Menentukan Entity
+  
+- Berdasarkan requirement yang ada kita bisa mulai untuk mengidentifikasi entity dalam database.
+- Beberapa kandidat yang paling sering menjadi sebuah entity : peoples, things, events, locations
+- Mari kita lihat kembali requirement yang ada, dan kita mulai list entity yang ada.
+- Berikut adalah kandidat yang bisa dijadikan enitity dalam database :
+  - User
+  - Singer
+  - Track
+  - Album
+  - Playlist
+  
+  &nbsp;
+  
+Menentukan Atribbutes dari Entity
+  
+- Tahapan ini kita akan menentukan attributes apa saja yang akan datanya kita simpan di dalam sebuah entity.
+- Attributes yang di perlukan didalam entity kemungkinan sudah ada di dalam requirements document, atau mungkin juga diperlukan penafsiran kita sendiri sebagai database developer.
+  
+  &nbsp;
+  
+![image_2022-11-11_203013892](https://user-images.githubusercontent.com/80299731/201350267-8a79df58-adf2-4848-9040-7de53dc4177f.png)
+
+![image_2022-11-11_203225149](https://user-images.githubusercontent.com/80299731/201350653-b3827ec1-3de8-441f-b165-471f9d885bb6.png)
+
+![image_2022-11-11_203349467](https://user-images.githubusercontent.com/80299731/201350892-8e6e3747-57c3-4f67-9a47-5bd6d1e9d0bf.png)
+
+
+ ![image_2022-11-11_203447309](https://user-images.githubusercontent.com/80299731/201351061-7e2ae52b-27b5-4170-8f4b-4c35564ced7d.png)
+
 ## Design Database with MySQL
 ## 
