@@ -180,6 +180,35 @@ Menentukan Atribbutes dari Entity
 
 
  ![image_2022-11-11_203447309](https://user-images.githubusercontent.com/80299731/201351061-7e2ae52b-27b5-4170-8f4b-4c35564ced7d.png)
+ 
+  &nbsp;
+  
+Membuat SQL Table dari Entity
+- Setelah kita punya ERD, maka kita akan lanjut dengan create table berdasarkan dengan data yang kita punya.
+- Pada kali ini kita akan menggunakan terminal untuk menjalankan query SQL
+  
+   &nbsp;
+  
+                          Membuat Table User
+                          CREATE TABLE ‘user’ (
+                          ‘user_id INT NOT NULL auto_INCREMENT,
+                          ‘name’ VARCHAR(50) NOT NULL DEFAULT ‘’,
+                          ‘Email’ VARCHAR(50) NOT NULL DEFAULT ‘’,
+                          ‘password’ VARCHART(50) NOT NULL DEFAULT ‘’,
+                          PRIMARY KEY (‘user_id)
+                          )
+  
+  &nbsp;
+  
+Apa itu Basis Data Relasional?
+<div align="justify">Menurut Oracle, database relasional adalah "sejenis database yang menyimpan dan menyediakan akses ke titik data yang terkait satu sama lain". Oke terdengar bagus
+  
+  &nbsp;
+  
+foreign key adalah pengenal unik atau kombinasi pengenal unik yang menghubungkan dua tabel atau lebih dalam suatu database. Foreign key juga sering disebut sebagai kunci asing.
+  
+  &nbsp;
+  
+Primary key adalah suatu nilai dalam basis data yang digunakan untuk mengidentifikasi suatu baris dalam tabel. Nilai dari primary key adalah unik.
 
-## Design Database with MySQL
-## 
+
