@@ -1,4 +1,4 @@
-# **Rangkuman Week6**
+# **Rangkuman BE Week2**
 
 ## Back-End Development, Database Intro, Database
 
