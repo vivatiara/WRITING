@@ -242,3 +242,101 @@ Rahasianya adalah kunci simetris yang diketahui oleh pengirim dan penerima token
 
 
 ## Sequelize
+
+Sequelize adalah ORM (Object Relational Mapping) Node JS yang berbasis promise. Sequelize mendukung sebagian besar relational Database seperti MySQL, PostgresQL, MariaDB, SQLite dan Miscrosoft SQL Server.
+Dengan fitur fitur di Sequelize, kita bisa mengelola dan mengatur data di database kita dengan cepat, dan efisien.
+
+  &nbsp;
+  
+ORM adalah suatu metode/teknik pemrograman yang digunakan untuk mengkonversi data dari lingkungan bahasa pemrograman berorientasi objek (OOP) dengan lingkungan database relational.  
+
+- Install Sequelize-cli
+  Kita perlu menginstall sequelize cli agar dapat menjalankan generator menggunakan terminal sehingga lebih mudah.
+
+                      NPM install -g Sequelize-cli
+                      
+- Install Sequelize
+  Ketika kita melakukan inisiasi project kita pertama perlu menginstall sequelize menggunakan npm install sequelize dan perlu menginstall driver sql yang kita butuhkan
+          
+                    installing by npm
+                    npm install --save sequelize
+                    install driver database
+                    npm install --save mysql
+                    
+Sequelize init
+Pertama kita perlu melakukan inisialisasi di project kita terlebih dahulu agar dapat melakukan generate code
+
+![image_2022-11-12_221141099](https://user-images.githubusercontent.com/80299731/201480667-aaf8d965-727a-4f0a-bafd-780a0b625777.png)
+
+Generate Model
+Mari kita membuat table todo dengan field seperti gambar di bawah
+
+![image_2022-11-12_221245834](https://user-images.githubusercontent.com/80299731/201480700-a22baa20-f04e-48a2-bac7-7efadc31996f.png)
+
+Generate Model
+Kita bisa melihat datanya menjadi sebuat class (OOP) dan dapat kita gunakan untuk membuat Rest API menggunakan express atau dapat memberikan behaviour di statenya
+
+  Setelah Model tersedia, maka model tersebut bisa kita gunakan untuk membuat CRUD.
+
+Beberapa endpoint RESTFul :
+
+
+Get All Todos
+Get Todo Detail By Id
+Create New Todo
+Update Todo By Id
+Delete Todo
+
+
+Generate Model
+Akhirnya kita dapat menggunakan generate dan kita bisa mengecek ke database sehingga dapat kita gunakan untuk penimpanan DB
+
+![image_2022-11-12_221538827](https://user-images.githubusercontent.com/80299731/201480798-ad619f96-b474-4ccd-8889-1aa6dca74feb.png)
+
+
+Jika ada yang salah, kita bisa mengembalikan (undo) menggunakan :
+
+![image_2022-11-12_221608406](https://user-images.githubusercontent.com/80299731/201480822-8825d293-68a1-40f2-8a9d-daee4faa27e3.png)
+
+Generate Seed
+Seed adalah data awal yang bisa kita gunakan untuk mengisi data di database untuk keperluan awal project menggunakan sequelize
+
+![image_2022-11-12_221726484](https://user-images.githubusercontent.com/80299731/201480902-ad9fc71d-a856-4083-9507-16d5dc4c39b2.png)
+
+Membuat CRUD Dengan Express dan Sequelize
+
+   &nbsp;
+
+Setelah Model tersedia, maka model tersebut bisa kita gunakan untuk membuat CRUD.
+Beberapa endpoint RESTFul :
+
+- Get All Todos
+- Get Todo Detail By Id
+- Create New Todo
+- Update Todo By Id
+- Delete Todo
+
+- Get All Todo
+   Untuk Kita akan membuat sebuah routing entuk get all todo dengan syntax berikut 
+   
+![image_2022-11-12_222042742](https://user-images.githubusercontent.com/80299731/201481050-fce3a046-9327-4caa-8dfc-01b8c8340749.png)
+                                                        
+- Get Todo Detail By Id
+Untuk Kita akan membuat sebuah routing entuk get detail todo berdasarkan Id todo dengan syntax berikut
+
+![image_2022-11-12_222330337](https://user-images.githubusercontent.com/80299731/201481156-bf99deea-1d80-4e01-b016-28c26258a6a0.png)
+
+- Create New Todo
+Untuk Kita akan membuat sebuah routing entuk create new todo dengan syntax berikut
+
+![image_2022-11-12_222510278](https://user-images.githubusercontent.com/80299731/201481213-765f57eb-b528-43b0-98c5-c09f8a38ac8a.png)
+
+- Update Todo By Id
+Untuk Kita akan membuat sebuah routing entuk update todo by Id dengan syntax berikut
+
+![image_2022-11-12_222607519](https://user-images.githubusercontent.com/80299731/201481249-502e2efd-0536-47d9-a65d-28343279aacd.png)
+
+- Delete Todo By Id
+Untuk Kita akan membuat sebuah routing entuk delete todo by Id dengan syntax berikut
+![image_2022-11-12_222716083](https://user-images.githubusercontent.com/80299731/201481298-ec072db4-6a92-4ce3-aeae-1f30fb048cff.png)
+                   
