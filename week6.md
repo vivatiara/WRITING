@@ -164,18 +164,81 @@ Mengambil satu nilai setelah melakukan perhitungan pada sekumpulan nilai
     - Mewakili satu karakter.
       Contoh : m_ster akan cocok dengan master & mister
 
-
-
-
-
-
-
-   
-
-
-
-
-
-
 ## Authentication & Authorization in Express, JavaScript Authentication
+
+Authentication adalah verifikasi siapa Anda.
+Misalnya, katakanlah Anda pergi ke konser. Di pintu depan, penjaga keamanan meminta untuk melihat tiket dan ID Anda untuk memverifikasi bahwa nama di ID Anda cocok dengan nama di tiket Anda.
+
+Otentikasi yang bergantung pada satu faktor, seperti kombinasi nama pengguna/sandi sederhana, disebut Otentikasi Satu Faktor, dan menjadi semakin tidak aman
+
+  &nbsp;
+  
+Authorization adalah verifikasi atas apa yang boleh Anda lakukan.
+
+Kembali ke contoh konser kami, setelah satpam mengautentikasi Anda, Anda kemudian memberikan tiket Anda ke satpam lain yang kemudian hanya mengizinkan Anda untuk masuk ke Penerimaan Umum (bukan bagian VIP).
+  
+  &nbsp;
+  
+Authorization sangat penting untuk keamanan web, dan bertanggung jawab atas segala hal mulai dari mencegah pengguna memodifikasi akun satu sama lain, melindungi aset back-end dari penyerang, hingga memberikan akses terbatas ke layanan eksternal.
+
+  &nbsp;
+  
+Salah satu alat inti untuk menegakkan otentikasi dan otorisasi adalah enkripsi. Enkripsi adalah proses mengubah data menjadi format yang tidak dapat dibaca kecuali Anda memiliki kunci yang benar untuk mendekripsinya. Enkripsi datang dalam dua jenis utama:
+
+- Symmetric encryption
+- Asymmetric encryption
+
+Tanggapan terhadap prompt autentikasi dapat dikategorikan menjadi:
+
+- Knowledge-Based: “Something You Know”
+- Possession-Based: “Something You Have”
+- Inherence-Based: “Something You Are”
+
+Web Session
+
+Web Session mengacu pada serangkaian interaksi pengguna selama jangka waktu tertentu. Data sesi disimpan di sisi server dan dikaitkan dengan ID sesi.
+
+Pikirkan sesi sebagai memori jangka pendek untuk aplikasi web. Pada latihan berikutnya, kami akan menjelaskan di mana pengidentifikasi sesi ini disimpan sehingga browser (klien) dapat terus mengambil data sesi yang sama di antara pemuatan halaman yang berbeda.
+
+![image_2022-11-12_214039382](https://user-images.githubusercontent.com/80299731/201479332-ddf28013-d9b7-43d7-b649-5e27ef020a6b.png)
+
+![image_2022-11-12_214123847](https://user-images.githubusercontent.com/80299731/201479371-7256f39b-7ca8-4394-8466-e3e82d8984fc.png)
+
+Token Web JSON adalah objek JSON mandiri yang secara kompak dan aman mengirimkan informasi antara dua pihak. Mereka aman karena ditandatangani secara digital menggunakan pasangan kunci rahasia atau publik/pribadi.
+
+   &nbsp;
+
+Sebagai pengingat, JSON, atau Notasi Objek JavaScript, pada dasarnya adalah versi yang sedikit lebih ketat dari objek Javascript.
+Objek JSON harus diapit oleh kurung kurawal dan dapat berisi satu atau lebih pasangan nilai kunci
+
+![image_2022-11-12_214621180](https://user-images.githubusercontent.com/80299731/201479596-bd8a8100-25f0-451e-8ef1-ff3ef2680348.png)
+
+Components of a JWT
+A JWT is made up of three components:
+
+- Header
+- Payload
+- Signature
+
+  &nbsp;
+
+ JWT Header berisi jenis token yang kami buat dan algoritma penandatanganan yang akan digunakan.
+
+Jenis: Jenis token ini akan selalu "JWT". Internet Assigned Numbers Authority, atau IANA, mengoordinasikan sumber daya protokol internet di seluruh dunia. Jenis "JWT" ​​sejajar dengan jenis media "application/jwt".
+
+Algoritma: Penandatanganan, atau hashing, algoritma yang digunakan mungkin berbeda. Beberapa algoritma yang umum digunakan adalah HMAC-SHA256, diwakili oleh "HS256", RSA dengan SHA-256, diwakili oleh "RW256", dan ECDSA dengan SHA-256, diwakili oleh "ES256".
+
+  &nbsp;
+
+JWT Payload berisi klaim tentang suatu entitas. Klaim adalah pernyataan atau potongan informasi dan entitas sering kali merupakan pengguna.
+
+![image_2022-11-12_215215164](https://user-images.githubusercontent.com/80299731/201479841-b0847c8a-2f7c-4a31-b05e-23a832868072.png)
+
+JWT Signature digunakan untuk memverifikasi bahwa JWT tidak dirusak atau diubah. Itu dapat dibuat dengan mengambil tajuk yang disandikan, muatan yang disandikan, rahasia, dan menggunakan algoritma hashing untuk membuat hash dari elemen-elemen itu.
+
+Rahasianya adalah kunci simetris yang diketahui oleh pengirim dan penerima token ini.
+
+![image_2022-11-12_215618188](https://user-images.githubusercontent.com/80299731/201480000-2f030a66-6aa4-4f88-9e52-af486ff3cc86.png)
+
+
 ## Sequelize
