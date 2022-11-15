@@ -132,4 +132,21 @@ Aplikasi yg berjalan di dalam container docker tidak terpengaruh oleh faktor lua
 
 - Docker berfungsi sebagai penyedia layanan virtual bagi aplikasi yg diinstall pada sebuah host. Docker akan menyediakan hal-hal yang diperlukan untuk aplikasi mulai dari akses file, koneksi internet, hingga port agar aplikasi dapat berjalan dengan mulus
 
+- Menggunakan Docker memungkinkan Anda mengirimkan kode lebih cepat, menstandardisasi operasi aplikasi, memindahkan kode dengan lancar, dan menghemat uang dengan meningkatkan pemanfaatan sumber daya. Dengan Docker, Anda mendapatkan satu objek yang dapat dijalankan di mana saja.
 
+- Definisi Container adalah sejenis software yang mengemas dan mengisolasi applikasi secara virtual untuk mempermudah software deployment. Berbeda dengan konsep traditional Virtual Machine, Container tidak membutuhkan dedicated operating system (OS Kernel) tetapi Container Kernel dapat di pergunakan secara bersamaan.
+
+- Docker-Compose adalah alat untuk mendefinisikan dan menjalankan satu atau beberapa container yang saling terkait dengan sebuah command. 
+    - Proses Dasar Penggunaan Docker-Compose :
+
+       - Mendefinisikan environment aplikasi dengan membuat Dockerfile sehingga bisa digunakan kembali dimana saja.
+       -  Mendefinisikan service lainnya (termasuk aplikasi kita) di dalam docker-compose.yml sehingga semuanya bisa berjalan bersamaan dalam environment yang terisolasi.
+       -  Jalankan command docker compose yaitu : docker-compose build dan docker-compose up melalui command prompt/shell (pastikan anda berada pada path yang sama dengan posisi file docker-compose.yml).
+
+Docker compose Command
+- docker-compose build : digunakan untuk mem-build semua service yang telah didefinisikan pada docker-compose.yml, output dari command ini adalah image per service yang siap untuk dijalankan pada sebuah container. Default nama image yang dihasilkan adalah [namafolder-posisi-file_docker-compose.yml]_[nama_service]
+- docker-compose up : digunakan untuk menjalankan semua image yang telah di-build ( docker-compose build ), jika tidak terjadi masalah maka image tersebut menjadi running container sedangkan jika terdapat masalah maka biasanya akan terbentuk container yang posisinya berhenti/stop. 
+- docker-compose down : Menghentikan (stop) semua container dan me-remove nya (ingat stop tidak otomatis remove) semua container, networks, volumes, dan images yang dihasilkan oleh perintah up
+- docker-compose logs : command ini penting jika kita ingin melihat apa yg terjadi pada service tertentu saat dijalankan dalam container.
+- ocker-compose config : digunakan untuk mengecek apakah script yang ada pada file docker-compose.yml yang telah kita buat sudah valid atau sudah sesuai dengan referensi dari docker-compose.
+- Masih banyak command lain yang bisa digunakan, tetapi pada umumnya command tersebut hampir sama dengan command docker (start, run, kill, ps, dll).
